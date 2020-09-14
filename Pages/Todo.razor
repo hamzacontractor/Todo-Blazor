@@ -1,0 +1,108 @@
+﻿@page "/Todo"
+@using System.Threading;
+
+
+
+<div class="container">
+    <div class="row justify-content-center my-2">
+        <h2>Todo</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 p-2 mx-auto">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-dark input-group input-group-lg rounded p-0" style="box-shadow:0 0 .25em 0 currentcolor;">
+                        <input type="text" name="txtTodo" @bind="todo.Text" @oninput="(e=> { todo.Text = e.Value.ToString(); })" placeholder="New Todo" class="d-inline-flex flex-grow-1 border-0 m-0 rounded-left px-3" style="outline:none!important;" />
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-sm btn-outline-dark border-0" @onclick="AddTodo">Add New</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-2">
+                    <div class="ml-auto text-black-50" style="font-size:.75em">@current.ToLocalTime()</div>
+                </div>
+            </div>
+
+
+            @if (todos.Count > 0) {
+                foreach (TodoClass t in todos) {
+                    string cls = "row my-3 p-2 text-info shadow rounded position-relative";
+                    if (t.Done) cls += " bg-secondary text-white";
+                    <div class="@cls" style="font-size:1.2em;">
+                        <div class="col-12 px-2 my-1">
+                            <label class="d-flex" style="cursor:pointer;">
+                                <input type="checkbox" name="chkDone" @bind="t.Done" class="my-auto" style="width:1.2em; height:1.2em;cursor:pointer;" />
+
+                                @if (t.Done) {
+                                    <span class="my-auto ml-2"><s>@t.Text</s></span>
+                                }
+                                else {
+                                    <span class="my-auto ml-2">@t.Text</span>
+                                }
+
+
+                            </label>
+
+                        </div>
+                        @*<div class="col-12 px-2">Priority: @t.Priority</div>*@
+                        <div class="col-12 px-2" style="font-size:.6em;">Added at @t.TimeAdded.ToLocalTime()</div>
+                        @*<div class="col-12 px-2 my-1">Checked: @todo.Done</div>*@
+                        <button type="button" class="btn btn-sm btn-danger position-absolute" style="font-size:.6em; top:.5em; right:.5em;" @onclick="(e => { Console.WriteLine(e.Type.ToString()); RemoveTodo(t); })">&times;</button>
+                    </div>
+
+                }
+            }
+
+        </div>
+    </div>
+</div>
+
+@code {
+    public class TodoClass {
+
+        public string Text { get; set; }
+
+        public DateTime TimeAdded { get; set; }
+
+        public int Priority { get; set; }
+
+        public bool Done { get; set; }
+
+    }
+
+    [Parameter] public string NewTodo { get; set; }
+    [Parameter] public DateTime current { get; set; } = DateTime.Now;
+    [Parameter] public TodoClass todo { get; set; } = new TodoClass();
+    [Parameter] public List<TodoClass> todos { get; set; } = new List<TodoClass>();
+
+    protected override Task OnInitializedAsync() {
+
+        var timer = new Timer(new TimerCallback(_ => {
+            current = DateTime.Now;
+
+            // Note that the following line is necessary because otherwise
+            // Blazor would not recognize the state change and not refresh the UI
+            this.StateHasChanged();
+        }), DateTime.Now, 1000, 1000);
+
+
+        return base.OnInitializedAsync();
+    }
+
+    void AddTodo() {
+        if (todo.Text != "" && todo.Text != null) {
+            todo.TimeAdded = DateTime.Now.ToLocalTime();
+            todo.Priority = 1;
+            todos.Add(todo);
+            Console.WriteLine(todo);
+            todo = new TodoClass();
+            NewTodo = "";
+        }
+    }
+
+    void RemoveTodo(TodoClass todo) {
+        todos.Remove(todo);
+        Console.WriteLine(todo);
+    }
+}
