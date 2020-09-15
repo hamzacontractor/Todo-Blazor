@@ -1,0 +1,114 @@
+﻿@page "/"
+@using System.Threading;
+@using Models;
+
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 p-2 mx-auto">
+            <div class="row">
+                <div class="col-12">
+                    <div class="input-group input-group-lg todo-input-container">
+                        <input type="text" name="txtTodo" @bind="todo.Text" @oninput="(e=> { todo.Text = e.Value.ToString(); })" placeholder="New Todo" class="d-flex flex-grow-1 border-0 m-0 px-3" style="outline:none!important;" />
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-sm btn-light border-0" @onclick="AddTodo">Add New</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex w-100 mt-3 px-3 justify-content-between" style="font-size:.8em">
+                    <div class="my-auto" style="color:rgb(var(--code-primary));">
+                        @current.ToString("dddd, dd MMMM yyyy hh:mm:ss tt")
+                    </div>
+                    <div class="d-flex my-auto">
+                        <label class="my-auto">Set Priority:</label>
+                        <label class="d-flex mx-2 my-auto" style="cursor:pointer">
+                            <input type="radio" name="chkBxPriority" class="my-auto" style="cursor:pointer" value="High" @onchange="(e => { Priority = e.Value.ToString(); })" />
+                            <div class="ml-2 my-auto">High</div>
+                        </label>
+                        <label class="d-flex mx-2 my-auto" style="cursor:pointer">
+                            <input type="radio" name="chkBxPriority" class="my-auto" checked style="cursor:pointer" value="Medium" @onchange="(e => { Priority = e.Value.ToString(); })" />
+                            <div class="ml-2 my-auto">Medium</div>
+                        </label>
+                        <label class="d-flex mx-2 my-auto" style="cursor:pointer">
+                            <input type="radio" name="chkBxPriority" class="my-auto" style="cursor:pointer" value="Low" @onchange="(e => { Priority = e.Value.ToString(); })" />
+                            <div class="ml-2 my-auto">Low</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 p-4 mt-4 priority-container">
+                    <h4 class="mx-auto">High Priority</h4>
+                    @if (todos.Count > 0) {
+                        <div class="col-12">
+                            @foreach (TodoClass t in todos) {
+                                if (t.Priority == "High") {<TodoComponent self="@t" />}
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="col-12 p-4 my-4 priority-container">
+                    <h4 class="mx-auto">Medium Priority</h4>
+                    @if (todos.Count > 0) {
+                        <div class="col-12">
+                            @foreach (TodoClass t in todos) {
+                                if (t.Priority == "Medium") {<TodoComponent self="@t" />}
+                            }
+                        </div>
+                    }
+                </div>
+                <div class="col-12 p-4 priority-container">
+                    <h4 class="mx-auto">Low Priority</h4>
+                    @if (todos.Count > 0) {
+                        <div class="col-12">
+                            @foreach (TodoClass t in todos) {
+                                if (t.Priority == "Low") {<TodoComponent self="@t" />}
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+    [Parameter] public static List<TodoClass> todos { get; set; } = new List<TodoClass>();
+
+    private string Priority { get; set; } = "Medium";
+    private DateTime current { get; set; } = DateTime.Now.AddHours(5.5);
+    private TodoClass todo { get; set; } = new TodoClass();
+
+    protected override Task OnInitializedAsync() {
+
+        var timer = new Timer(new TimerCallback(_ => {
+            current = DateTime.Now.AddHours(5.5);
+
+            // Note that the following line is necessary because otherwise
+            // Blazor would not recognize the state change and not refresh the UI
+            this.StateHasChanged();
+        }), DateTime.Now, 500, 500);
+
+
+        return base.OnInitializedAsync();
+    }
+
+    private void AddTodo() {
+        if (todo.Text != "" && todo.Text != null) {
+            todo.TimeAdded = DateTime.Now.AddHours(5.5);
+            todo.Priority = Priority;
+            todos.Add(todo);
+            todo = new TodoClass();
+        }
+    }
+
+
+}

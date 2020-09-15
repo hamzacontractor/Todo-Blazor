@@ -1,3 +1,25 @@
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.AssemblyInfoInputs.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.AssemblyInfo.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.csproj.CoreCompileInputs.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorComponent.input.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\App.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\TodoComponent.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\TodoPage.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\_Imports.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Todo Blazor App.dll
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.TagHelpers.input.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.TagHelpers.output.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorCoreGenerate.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\App.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\TodoComponent.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\TodoPage.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\MainLayout.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\Properties\launchSettings.json
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\Todo Blazor App.StaticWebAssets.xml
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\Todo Blazor App.dll
@@ -5,19 +27,14 @@ D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\Todo Blazor App.pdb
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\service-worker-assets.js
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\service-worker.js
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Todo Blazor App.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Net.Http.Json.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Buffers.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\mscorlib.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Threading.Tasks.Extensions.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Memory.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Text.Json.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\netstandard.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Xml.Linq.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Core.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\WebAssembly.Net.WebSockets.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Memory.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\mscorlib.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\WebAssembly.Bindings.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Numerics.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Xml.dll
@@ -33,18 +50,18 @@ D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Drawing.Common.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Data.DataSetExtensions.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Data.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Numerics.Vectors.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Text.Encodings.Web.dll
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.Web.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.Forms.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.ComponentModel.Annotations.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.ComponentModel.DataAnnotations.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Buffers.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Logging.Abstractions.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.WebAssembly.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.DependencyInjection.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Text.Encodings.Web.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Primitives.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Configuration.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Configuration.Json.dll
@@ -52,6 +69,10 @@ D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.FileProviders.Physical.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.FileSystemGlobbing.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Text.Json.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Threading.Tasks.Extensions.dll
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Numerics.Vectors.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Logging.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Options.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.JSInterop.dll
@@ -64,19 +85,14 @@ D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\blazo
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\blazor.boot.json
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\service-worker-assets.js.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Todo Blazor App.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Net.Http.Json.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Buffers.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\mscorlib.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Threading.Tasks.Extensions.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Memory.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Text.Json.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\netstandard.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Xml.Linq.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Core.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\WebAssembly.Net.WebSockets.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Memory.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\mscorlib.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\WebAssembly.Bindings.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Numerics.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Xml.dll.gz
@@ -92,18 +108,18 @@ D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Drawing.Common.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Data.DataSetExtensions.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Data.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Numerics.Vectors.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Text.Encodings.Web.dll.gz
-D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.Web.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.Forms.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.ComponentModel.Annotations.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.ComponentModel.DataAnnotations.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Buffers.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Logging.Abstractions.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.AspNetCore.Components.WebAssembly.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.DependencyInjection.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Text.Encodings.Web.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Primitives.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Configuration.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Configuration.Abstractions.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Configuration.Json.dll.gz
@@ -111,6 +127,10 @@ D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.FileProviders.Physical.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.FileSystemGlobbing.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.FileProviders.Abstractions.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Text.Json.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Threading.Tasks.Extensions.dll.gz
+D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\System.Numerics.Vectors.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Logging.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.Extensions.Options.dll.gz
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\wwwroot\_framework\_bin\Microsoft.JSInterop.dll.gz
@@ -153,48 +173,18 @@ D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\System.Runtime.CompilerS
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\System.Text.Encodings.Web.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\System.Text.Json.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\System.Threading.Tasks.Extensions.dll
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.AssemblyInfoInputs.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.AssemblyInfo.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.csproj.CoreCompileInputs.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorComponent.input.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\App.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Counter.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\FetchData.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Index.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Todo.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\_Imports.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Todo Blazor App.dll
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.TagHelpers.input.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.TagHelpers.output.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorCoreGenerate.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\App.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\Counter.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\FetchData.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\Index.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\Todo.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\MainLayout.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorTargetAssemblyInfo.cache
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.csproj.CopyComplete
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\unlinked.output
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\99dseBOagY3mzu5Y8Eqm8gRI_o8QbbCp7R2Ew9bQ_5E=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\-cPXlNTX8GKF-lIn-2DIjtxTe0Wpy4ZDcyAj67b6JYk=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\HQeN_ZfHAERO_uW0fP0J9J3WV1hQ3vUIOWbqGSYBPp8=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\kL-omZDwqByAi_lPdMeDmr3XjHcn4RVb_LmZ4mut1Yc=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\OBWh2or_2mU6elwqPfmL72FBZVKl2WzTJ4L-IrKeXM4=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\uB9VmLiUL7lzGh6jFNnGsTTLkZYC9EM7-UN6qAkK2Ds=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\Bs1Wrmh4ex9dTEIT0yCRF52N-wOmsBDt457BHr0-ssM=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\-zcPVM75OAY_joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\Zw2-5aDWjgMedporhjigwhi-UCLcfl0tfa0LXUyD9HE=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\r6QdEXq0KfB8oZDzhnV4xskSbzJA0yBVi6XFpa3TGHM=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\ob5gN-szfb1CwWnyQWvWvuid3u4df593KvZeoJQEaKc=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\-cPXlNTX8GKF-lIn-2DIjtxTe0Wpy4ZDcyAj67b6JYk=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\BaZPMj95_YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\6XMT1eT3svGdg6hFzAHJscYdTQjakoYccYTdHmKSr7Y=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\8g0neeYVmPrxWgbMI0ZTVO6257qMisUTPZ78egAnIMw=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\RMOYBniHZkD8OZrBV3ONIMTZqsBhSAcBFm4pVuY9dv4=.hash
@@ -210,18 +200,18 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\hLbkXBzxUk9DSX
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\vcCLMX4xAsUqKuQjjIkzu1O9pHGO-tdvysgSmEjL6oo=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\eejp4oI3sQBq-tI6GsJNaPu3Dkdot5Vbn8_R3w2vYLE=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\dxfTuT6ffPMmvuUUTfv7_bpLtOZZZHQdz77hjhy9qHw=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\qAKfFnquY_7UC-MzLi04rjqEhLzTryCoLg-S6MxI19I=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\Tqh1Da_iTRQJEZUGAsMNFuZ4hf1PMf13WApRZod_uw4=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\Bs1Wrmh4ex9dTEIT0yCRF52N-wOmsBDt457BHr0-ssM=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\bSgsT2x5xMvs8mara5wU_EJwcyHa9GVMU85HwhWcdWM=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\m7Q_cF5-ji3OMfdGlCuE8pQ-iM_kxNHLq-IEWVvIaOg=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\tmnkCmP9OzLUkpQ3LP7PRosi7gt5pyfEZCM6aqAokFI=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\LIfCYwg_PHltTK4z3EnbSkA7m2cn8JS4jHVthdKrDF8=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\PEg9ghiKSWBTX0jq8pFDvv2Yvw92Y8W0ELtWrSE4fhA=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\6gJMwefpsWLHWsEipZp143xn8k2Ea27upnXqjUT6iNI=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\FJ_rEgcx6ljTxwbRXZSUGfrDKpVvOxHCSfNxbnXNn3M=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\oK1Bjv95fH_hSbogUkJE_xDAI203kJG6lL6Sm-NuPWg=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\Tqh1Da_iTRQJEZUGAsMNFuZ4hf1PMf13WApRZod_uw4=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\y-FyJQOcW2TOcTp7Iuv8brGBzL5ZP0oJdG7ysK_gtKc=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\kL-omZDwqByAi_lPdMeDmr3XjHcn4RVb_LmZ4mut1Yc=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\n0Ag7rF7ZQamklPSZkakIXkRoa6JwlmPSS0cRaAhJQM=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\2jNkt--JGfoqWNB8whRdJotnsanWbH3FfxZWz0gyLTs=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\mQqyOIjuVduaLQ7ZyvDrChDLp8rTeQknIIWDzqsO4eY=.hash
@@ -229,30 +219,31 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\3trD3kyUrc0a2I
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\tY1dlliVr_yGzBF7d0z-iaulZfBJNaSrCKDD0RP2cc8=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\r8LuqDQgcB-c3E48xHqsAY1eRZB1ZtuqZF6nlufn7kg=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\DrtNiKIMjfSOdamH5Bs5zHmjFADgNiwrY5tRgTm6XuI=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\HQeN_ZfHAERO_uW0fP0J9J3WV1hQ3vUIOWbqGSYBPp8=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\OBWh2or_2mU6elwqPfmL72FBZVKl2WzTJ4L-IrKeXM4=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\qAKfFnquY_7UC-MzLi04rjqEhLzTryCoLg-S6MxI19I=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\_kkwUt5LUrFrnFcHiSvLP3Ps50UAimB6C5utgehqOo4=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\vX0kongq0v_lNw55rptkIwta4F5ROk-oVJqxf1-57VI=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\blazor.boot.json
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\PtGVqL-E_7hqULN4FjovcbiNTowiS6UkqVuZGpgpSYU=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\service-worker-assets.js.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Todo Blazor App.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\mscorlib.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Threading.Tasks.Extensions.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Memory.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Text.Json.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\netstandard.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Xml.Linq.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Core.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\WebAssembly.Net.WebSockets.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Memory.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\mscorlib.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\WebAssembly.Bindings.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Numerics.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Xml.dll.gz
@@ -268,18 +259,18 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_b
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Drawing.Common.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Data.DataSetExtensions.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Data.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Numerics.Vectors.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Text.Encodings.Web.dll.gz
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Components.Web.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Components.Forms.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.ComponentModel.Annotations.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.ComponentModel.DataAnnotations.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Components.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Logging.Abstractions.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Components.WebAssembly.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.DependencyInjection.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Text.Encodings.Web.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Primitives.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Configuration.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Configuration.Abstractions.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Configuration.Json.dll.gz
@@ -287,6 +278,10 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_b
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.FileProviders.Physical.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.FileSystemGlobbing.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.FileProviders.Abstractions.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Text.Json.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Threading.Tasks.Extensions.dll.gz
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Numerics.Vectors.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Logging.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Options.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.JSInterop.dll.gz
@@ -299,19 +294,14 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\bl
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\blazor.boot.json.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\service-worker-assets.js.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Todo Blazor App.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Net.Http.Json.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\mscorlib.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Threading.Tasks.Extensions.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Memory.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Text.Json.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\netstandard.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Xml.Linq.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Core.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\WebAssembly.Net.WebSockets.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Memory.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\mscorlib.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\WebAssembly.Bindings.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Numerics.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Xml.dll.br
@@ -327,18 +317,18 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_b
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Drawing.Common.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Data.DataSetExtensions.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Data.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Numerics.Vectors.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Text.Encodings.Web.dll.br
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Components.Web.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Components.Forms.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.ComponentModel.Annotations.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.ComponentModel.DataAnnotations.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Components.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Buffers.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Logging.Abstractions.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Components.WebAssembly.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.DependencyInjection.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Text.Encodings.Web.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Primitives.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Runtime.CompilerServices.Unsafe.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Configuration.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Configuration.Abstractions.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Configuration.Json.dll.br
@@ -346,6 +336,10 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_b
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.FileProviders.Physical.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.FileSystemGlobbing.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.FileProviders.Abstractions.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Text.Json.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Bcl.AsyncInterfaces.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Threading.Tasks.Extensions.dll.br
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Numerics.Vectors.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Logging.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.Options.dll.br
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.JSInterop.dll.br
@@ -362,8 +356,4 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.dll
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.pdb
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\serviceworkers\wwwroot\service-worker.js
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\service-worker-assets.js
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.csprojAssemblyReference.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\LAMDHjS4Pdt9Z51q2Gr81AsL1qjbfpOKDyW8HRS58as=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\4vLv7QN9zSAehUHbLaLqvBVg2ttLHat_oLhI_h4JQi0=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\5o7op_GSbG-LKr-JMtVLgELWKEuDt062EeoadbegLhA=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\rULxw20Q15kYg1CGfHLrWv1TEniF0KQpDwqsXsOsdEA=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\H1xV1GpSH4g23G2Vra3Tj6y6PR_qJfGyEW0e_rOEefs=.hash

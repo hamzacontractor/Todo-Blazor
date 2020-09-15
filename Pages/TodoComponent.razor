@@ -1,0 +1,61 @@
+﻿@using Models;
+
+@{
+    string cls = "row my-3 p-2 todo-container";
+    if (self.Done) cls += " todo-container-done ";
+    <div class="@cls" style="font-size:1.2em;">
+        <div class="col-12 px-2 my-1">
+            <label class="d-flex" style="cursor:pointer;">
+                <input type="checkbox" name="chkDone" @bind="self.Done" @onclick="(e => { Toggle(); })" class="my-auto" style="width:1.2em; height:1.2em;cursor:pointer;" />
+
+                @if (self.Done) {
+                    <span class="my-auto ml-2" style="color:rgb(var(--code-primary));"><s>@self.Text</s></span>
+                }
+                else {
+                    <span class="my-auto ml-2">@self.Text</span>
+                }
+
+
+            </label>
+
+        </div>
+        @*<div class="col-12 px-2">Priority: @t.Priority</div>*@
+        <div class="col-12 px-2 my-1" style="font-size:.65em;">
+            @if (self.Done) {
+                string tat = "";
+                if (self.Priority == "High") { tat += self.TurnAroundTime.TotalMinutes.ToString("N2") + " Mins"; }
+                if (self.Priority == "Medium") { tat += self.TurnAroundTime.TotalHours.ToString("N2") + " Hrs"; }
+                if (self.Priority == "Low") { tat += self.TurnAroundTime.TotalDays.ToString("N2") + " Days"; }
+                <div class="row justify-content-between" style="color:rgb(var(--code-secondary));">
+                    <div class="col-auto"><span class="mr-2">Completed On</span>@self.TimeCompleted.ToString("dddd, dd MMMM yyyy hh:mm tt") </div>
+                    <div class="col-auto">
+                        <span class="mr-2">Completed In</span>@tat
+                    </div>
+                </div>
+            }
+            else {
+                <div class="row">
+                    <div class="col-auto">
+                        <span class="mr-2">Added On</span>   @self.TimeAdded.ToString("dddd, dd MMMM yyyy hh:mm:ss tt")
+                    </div>
+                </div>
+            }
+        </div>
+        <button type="button" class="btn btn-sm btn-danger position-absolute" style="font-size:.6em; top:.5em; right:.5em;" @onclick="(e => { RemoveTodo(); })">&times;</button>
+    </div>
+}
+
+
+
+@code {
+   [Parameter] public TodoClass self { get; set; } = new TodoClass();
+
+   private void RemoveTodo() {
+       TodoPage.todos.Remove(self);
+   }
+
+   private void Toggle() {
+       self.TimeCompleted = DateTime.Now.AddHours(5.5);
+       self.TurnAroundTime = DateTime.Now.AddHours(5.5).Subtract(self.TimeAdded);
+   }
+}
