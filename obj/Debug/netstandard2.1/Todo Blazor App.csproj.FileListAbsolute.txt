@@ -1,25 +1,3 @@
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.AssemblyInfoInputs.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.AssemblyInfo.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.csproj.CoreCompileInputs.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorComponent.input.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\App.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\TodoComponent.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\TodoPage.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\_Imports.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Todo Blazor App.dll
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.TagHelpers.input.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.TagHelpers.output.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorCoreGenerate.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\App.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\TodoComponent.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\TodoPage.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\MainLayout.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\Properties\launchSettings.json
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\Todo Blazor App.StaticWebAssets.xml
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\Todo Blazor App.dll
@@ -173,10 +151,31 @@ D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\System.Runtime.CompilerS
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\System.Text.Encodings.Web.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\System.Text.Json.dll
 D:\Blazor Apps\Todo Blazor App\bin\Debug\netstandard2.1\System.Threading.Tasks.Extensions.dll
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.AssemblyInfoInputs.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.AssemblyInfo.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.csproj.CoreCompileInputs.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorComponent.input.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\App.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\CatgoryComponant.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\TodoComponent.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Pages\TodoPage.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\_Imports.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\RazorDeclaration\Todo Blazor App.dll
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.TagHelpers.input.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.TagHelpers.output.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorCoreGenerate.cache
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\App.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\CatgoryComponant.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\TodoComponent.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Pages\TodoPage.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\MainLayout.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.RazorTargetAssemblyInfo.cache
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.csproj.CopyComplete
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\unlinked.output
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\uB9VmLiUL7lzGh6jFNnGsTTLkZYC9EM7-UN6qAkK2Ds=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\Bs1Wrmh4ex9dTEIT0yCRF52N-wOmsBDt457BHr0-ssM=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\-zcPVM75OAY_joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\IPbQMdJxZXdk8HTlaPyXdQ6Zb82iZLphnM74yO4EURQ=.hash
@@ -227,13 +226,11 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\_kkwUt5LUrFrnF
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\rvTW0d54uLW0iDMAX30lpmr9f8uHoS3YYkEU5zNGhyc=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\vX0kongq0v_lNw55rptkIwta4F5ROk-oVJqxf1-57VI=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\blazor.boot.json
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\PtGVqL-E_7hqULN4FjovcbiNTowiS6UkqVuZGpgpSYU=.hash
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\service-worker-assets.js.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Todo Blazor App.dll.gz
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz
@@ -356,4 +353,7 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.dll
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\Todo Blazor App.pdb
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\serviceworkers\wwwroot\service-worker.js
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\service-worker-assets.js
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\H1xV1GpSH4g23G2Vra3Tj6y6PR_qJfGyEW0e_rOEefs=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\ZdojITQW98qzB0tXSwc685UK8m1_hHSxYzdR8VCSocA=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\LugBlm0OaiW0rB1MNmroLV_foh3F-0Y93I7G6_k5ESc=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\_Wu3S97IceO6x1IVpdT8eOJka171cEz7bDzuL9wLx3Q=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\NTLqpk4fVIjXQQROQr0lnxqm3KLyB_6wMho4pFbYn7U=.hash

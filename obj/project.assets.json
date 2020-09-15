@@ -1642,9 +1642,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Blazor Apps\\Todo Blazor App\\Todo Blazor App.csproj",
-      "projectName": "Todo Blazor App",
-      "projectPath": "D:\\Blazor Apps\\Todo Blazor App\\Todo Blazor App.csproj",
+      "projectUniqueName": "D:\\Blazor Apps\\Todo Blazor App\\TodoBlazorApp.csproj",
+      "projectName": "TodoBlazorApp",
+      "projectPath": "D:\\Blazor Apps\\Todo Blazor App\\TodoBlazorApp.csproj",
       "packagesPath": "C:\\Users\\Hamza Contractor\\.nuget\\packages\\",
       "outputPath": "D:\\Blazor Apps\\Todo Blazor App\\obj\\",
       "projectStyle": "PackageReference",

@@ -5,7 +5,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Todo_Blazor_App.Shared
+namespace TodoBlazorApp.Shared
 {
     #line hidden
     using System;
@@ -64,14 +64,14 @@ using Microsoft.JSInterop;
 #nullable disable
 #nullable restore
 #line 8 "D:\Blazor Apps\Todo Blazor App\_Imports.razor"
-using Todo_Blazor_App;
+using TodoBlazorApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 9 "D:\Blazor Apps\Todo Blazor App\_Imports.razor"
-using Todo_Blazor_App.Shared;
+using TodoBlazorApp.Shared;
 
 #line default
 #line hidden

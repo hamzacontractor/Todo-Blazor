@@ -81,7 +81,7 @@
 
 
 @code {
-    [Parameter] public static List<TodoClass> todos { get; set; } = new List<TodoClass>();
+    public static List<TodoClass> todos { get; set; } = new List<TodoClass>();
 
     private string Priority { get; set; } = "Medium";
     private DateTime current { get; set; } = DateTime.Now.AddHours(5.5);

@@ -1,4 +1,4 @@
-obj\Debug\netstandard2.1\blazor\unlinked\Todo Blazor App.dll
+obj\Debug\netstandard2.1\blazor\unlinked\TodoBlazorApp.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 obj\Debug\netstandard2.1\blazor\unlinked\netstandard.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.Xml.Linq.dll
@@ -49,4 +49,4 @@ obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Logging.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Options.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.JSInterop.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.JSInterop.WebAssembly.dll
-obj\Debug\netstandard2.1\blazor\unlinked\Todo Blazor App.pdb
+obj\Debug\netstandard2.1\blazor\unlinked\TodoBlazorApp.pdb
