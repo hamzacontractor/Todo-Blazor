@@ -3,46 +3,41 @@
 @using Models;
 
 
-
 <div class="container">
 
     <div class="row">
-        <div class="col-12 col-md-10 col-lg-8 p-2 mx-auto">
-            <div class="row">
-                <div class="col-12">
-                    <div class="input-group input-group-lg todo-input-container">
-                        <input type="text" name="txtTodo" @bind="todo.Text" @oninput="(e=> { todo.Text = e.Value.ToString(); })" placeholder="New Todo" class="d-flex flex-grow-1 border-0 m-0 px-3" style="outline:none!important;" />
-                        <div class="input-group-prepend">
-                            <button type="button" class="btn btn-sm btn-light border-0" @onclick="AddTodo">Add New</button>
-                        </div>
-                    </div>
+        <div class="col-sm-12 col-md-10 col-lg-8 mx-auto">
+            <div class="row pt-3 pb-2" style="background-color: rgb(var(--code-primary)); position:sticky; position:-webkit-sticky; z-index:11; top:0">
+                <div class="col-12 text-center">
+                    @current.ToString("dddd, dd MMMM yyyy")
                 </div>
-            </div>
-            <div class="row">
-                <div class="d-flex w-100 mt-3 px-3 justify-content-between" style="font-size:.8em">
-                    <div class="my-auto" style="color:rgb(var(--code-primary));">
-                        @current.ToString("dddd, dd MMMM yyyy hh:mm:ss tt")
-                    </div>
-                    <div class="d-flex my-auto">
+                <div class="col-12 text-center" style="font-size: 2.1em">
+                    @current.ToString("h:mm:ss tt")
+                </div>
+                <div class="col-12 mt-4 mb-2" style="font-size:.8em">
+                    <div class="d-flex justify-content-center">
                         <label class="my-auto">Set Priority:</label>
                         <label class="d-flex mx-2 my-auto" style="cursor:pointer">
-                            <input type="radio" name="chkBxPriority" class="my-auto" style="cursor:pointer" value="High" @onchange="(e => { Priority = e.Value.ToString(); })" />
+                            <input type="radio" name="chkBxPriority" class="my-auto" style="cursor: pointer; width: 1.2em; height: 1.2em;" value="High" @onchange="(e => { Priority = e.Value.ToString(); })" />
                             <div class="ml-2 my-auto">High</div>
                         </label>
                         <label class="d-flex mx-2 my-auto" style="cursor:pointer">
-                            <input type="radio" name="chkBxPriority" class="my-auto" checked style="cursor:pointer" value="Medium" @onchange="(e => { Priority = e.Value.ToString(); })" />
+                            <input type="radio" name="chkBxPriority" class="my-auto" checked style="cursor: pointer; width: 1.2em; height: 1.2em;" value="Medium" @onchange="(e => { Priority = e.Value.ToString(); })" />
                             <div class="ml-2 my-auto">Medium</div>
                         </label>
                         <label class="d-flex mx-2 my-auto" style="cursor:pointer">
-                            <input type="radio" name="chkBxPriority" class="my-auto" style="cursor:pointer" value="Low" @onchange="(e => { Priority = e.Value.ToString(); })" />
+                            <input type="radio" name="chkBxPriority" class="my-auto" style="cursor: pointer; width: 1.2em; height: 1.2em;" value="Low" @onchange="(e => { Priority = e.Value.ToString(); })" />
                             <div class="ml-2 my-auto">Low</div>
                         </label>
                     </div>
                 </div>
+                <div class="col-12 todo-input-container bg-white">
+                    <input type="text" name="txtTodo" @bind="todo.Text" @oninput="(e=> { todo.Text = e.Value.ToString(); })" @onkeydown="CheckKeyPress" placeholder="Todo" class="d-flex w-100 flex-grow-1 todo-input" />
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-12 p-4 mt-4 priority-container">
+            <div class="row pb-3">
+                <div class="col-12 p-4 mt-5 priority-container">
                     <h4 class="mx-auto">High Priority</h4>
                     @if (todos.Count > 0) {
                         <div class="col-12">
@@ -110,5 +105,15 @@
         }
     }
 
+    private void CheckKeyPress(KeyboardEventArgs args) {
+        switch (args.Key) {
+            case "Enter":
+                AddTodo();
+                break;
+
+            default:
+                break;
+        }
+    }
 
 }
