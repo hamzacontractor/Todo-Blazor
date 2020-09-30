@@ -10,6 +10,11 @@
     --code-light: 255, 255, 255;
 }
 
+button, a, .btn {
+    outline: none;
+    box-shadow: none !important;
+}
+
 html, body {
     font-family: 'Roboto', sans-serif;
     background-color: rgba(var(--code-primary),1);
@@ -20,6 +25,7 @@ html, body {
 a, .btn-link {
     color: #0366d6;
 }
+
 
 
 

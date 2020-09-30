@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Qa2awVZYnUhpumvD3a_HohNfNKthX7bDj7hoUkir5Lc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\JBTheQVlGm2fJZ11JgMTrDxCqtKvTuZAtpwAiMZvEzs=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TodoBlazorApp.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TodoBlazorApp.dll.gz"
     },
@@ -256,7 +256,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\4QHsuT7E5rLinjx6_pVL9fq8irnW7sveX6lnOB9mbPc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\7_FtaZd2xSysaMLC59XhYdtkNMZ15ha0lk73dxPdT5w=.hash",
+      "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.LocalStorage.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BNhQ8MFuAOzy6vJ_wtVOJpnZkmEJeV4vd6jzUok2hzo=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TodoBlazorApp.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TodoBlazorApp.pdb.gz"
     },
@@ -281,12 +286,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\W7K_QqzBBTW0sBGPPV013qBAU0pXidbX-UmGW_M-2v8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\qOSf0dYmIPfApvvWjVfMLxo71W2H3WtzHGdr3r-s8Yg=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\TIdg1-lWM-L921Ippx2AMW4eTIrjBgW9nsst94Jwntc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ayzBbeymNHDq2mEZuMUf3ENtj9k7IEA_Qsr7I5EzJsk=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.gz"
     }

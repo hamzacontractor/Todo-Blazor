@@ -1,0 +1,54 @@
+﻿
+
+@using TodoBlazorApp.Models
+
+@inject Blazored.LocalStorage.ILocalStorageService localStore
+
+
+
+<div class="col-12 p-0" style="margin-top:35px;">
+    <input type="text" placeholder="Catagory Name" @bind-value="CatagoryName" class="w-100 py-2 px-3" />
+</div>
+<div class="d-flex flex-column w-100 flex-grow-1 my-1" style="font-size:.7em; font-weight:300;">
+    <div class="d-flex justify-content-end">
+        <label class="my-auto">Todos Completion Time Average in</label>
+        <i>?</i>
+    </div>
+    <div class="d-flex justify-content-end">
+        <label class="d-flex mx-2 my-auto" style="cursor:pointer">
+            <input type="radio" name="chkBxCatagory" class="my-auto" style="cursor: inherit; width: 1.2em; height: 1.2em;" value="Mins" @onchange="SetTimeSpanUnit" />
+            <div class="ml-2 my-auto">Mins</div>
+        </label>
+        <label class="d-flex mx-2 my-auto" style="cursor:pointer">
+            <input type="radio" name="chkBxCatagory" class="my-auto" checked style="cursor: inherit; width: 1.2em; height: 1.2em;" value="Hrs" @onchange="SetTimeSpanUnit" />
+            <div class="ml-2 my-auto">Hours</div>
+        </label>
+        <label class="d-flex mx-2 my-auto" style="cursor:pointer">
+            <input type="radio" name="chkBxCatagory" class="my-auto" style="cursor: inherit; width: 1.2em; height: 1.2em;" value="Days" @onchange="SetTimeSpanUnit" />
+            <div class="ml-2 my-auto">Days</div>
+        </label>
+    </div>
+    <div class="d-flex justify-content-end my-2">
+        <button class="btn btn-outline-light" @onclick="AddNewCatagory">Add New Catagory</button>
+    </div>
+</div>
+
+
+
+@code {
+    private char TimeSpanUnit { get; set; } = 'H';
+    private string CatagoryName { get; set; } = "";
+
+    private async Task AddNewCatagory()
+    {
+        TodoCatagoryModel todoCatagory = new TodoCatagoryModel(CatagoryName, TimeSpanUnit);
+        await new Logic(localStore).AddNewCatagory(todoCatagory);
+    }
+
+    void HideAddNewCatagory()
+    {
+        Data.ShowCatagory = false;
+    }
+
+    void SetTimeSpanUnit(ChangeEventArgs e) { TimeSpanUnit = e.Value.ToString().ToCharArray()[0]; }
+}

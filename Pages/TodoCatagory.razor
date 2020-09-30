@@ -1,0 +1,33 @@
+﻿
+@using Models
+
+@inject ILocalStorageService localStore
+
+
+@foreach (TodoCatagoryModel todoCatagory in CatagoryModels)
+{
+    <div class="col-12 p-4 mt-5 priority-container">
+        <button type="button" class="btn btn-outline-danger position-absolute border-0" style="top:6px; right:4px;" @onclick="(() => { RemoveTodo(todoCatagory); })">&times;</button>
+        <h4>@todoCatagory.Name</h4>
+        @if (todoCatagory.Todos.Count > 0)
+        {
+            foreach (TodoClass thisTodo in todoCatagory.Todos)
+            {
+                <div class="col-12">
+                    <TodoComponent self="@thisTodo" />
+                </div>
+            }
+        }
+        <p>Average Completion Time: @todoCatagory.AverageTimeSpan</p>
+    </div>
+}
+
+@code{
+
+    [Parameter] public List<TodoCatagoryModel> CatagoryModels { get; set; }
+
+    async Task RemoveTodo(TodoCatagoryModel catagoryModel)
+    {
+        await new Logic(localStore).RemoveCatagory(catagoryModel);
+    }
+}

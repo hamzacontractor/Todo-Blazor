@@ -1,6 +1,9 @@
-﻿@page "/"
-@using System.Threading;
-@using Models;
+﻿
+@using Models
+
+
+@page "/"
+@inject Blazored.LocalStorage.ILocalStorageService localStore
 
 
 <div class="container">
@@ -8,107 +11,84 @@
     <div class="row">
         <div class="col-sm-12 col-md-10 col-lg-8 mx-auto">
             <div class="row pt-3 pb-2" style="background-color: rgb(var(--code-primary)); position:sticky; position:-webkit-sticky; z-index:11; top:0">
-                <div class="col-12 text-center">
-                    @current.ToString("dddd, dd MMMM yyyy")
+                <div class="col-12 justify-content-center">
+                    <DateTimeComponant />
                 </div>
-                <div class="col-12 text-center" style="font-size: 2.1em">
-                    @current.ToString("h:mm:ss tt")
-                </div>
-                <div class="col-12 mt-4 mb-2" style="font-size:.8em">
+                <div class="col-12 mt-4 mb-2">
                     <div class="d-flex justify-content-center">
-                        <label class="my-auto">Set Priority:</label>
-                        <label class="d-flex mx-2 my-auto" style="cursor:pointer">
-                            <input type="radio" name="chkBxPriority" class="my-auto" style="cursor: pointer; width: 1.2em; height: 1.2em;" value="High" @onchange="(e => { Priority = e.Value.ToString(); })" />
-                            <div class="ml-2 my-auto">High</div>
-                        </label>
-                        <label class="d-flex mx-2 my-auto" style="cursor:pointer">
-                            <input type="radio" name="chkBxPriority" class="my-auto" checked style="cursor: pointer; width: 1.2em; height: 1.2em;" value="Medium" @onchange="(e => { Priority = e.Value.ToString(); })" />
-                            <div class="ml-2 my-auto">Medium</div>
-                        </label>
-                        <label class="d-flex mx-2 my-auto" style="cursor:pointer">
-                            <input type="radio" name="chkBxPriority" class="my-auto" style="cursor: pointer; width: 1.2em; height: 1.2em;" value="Low" @onchange="(e => { Priority = e.Value.ToString(); })" />
-                            <div class="ml-2 my-auto">Low</div>
-                        </label>
+                        <SelectCatagory todoCatagoryModels="Data.Displayed" SelectedCatagory="@todo.CatagoryName" />
+
+                        <button class="btn btn-outline-light ml-5 mt-auto" @onclick="(() => { Data.ShowCatagory = true; })">New</button>
                     </div>
+                    @if (Data.ShowCatagory)
+                    {
+                        <div class="row my-2 p-3 position-relative" style="box-shadow: 1px 2px 3px 1px currentcolor, inset 1px 2px 3px 1px currentcolor">
+                            <button class="close btn btn-outline-danger px-3 py-2" style="position:absolute; top:6px; right:4px;" @onclick="(() => { Data.ShowCatagory = false; })">&times;</button>
+                            <AddCatagory />
+                        </div>
+                    }
                 </div>
                 <div class="col-12 todo-input-container bg-white">
-                    <input type="text" name="txtTodo" @bind="todo.Text" @oninput="(e=> { todo.Text = e.Value.ToString(); })" @onkeydown="CheckKeyPress" placeholder="Todo" class="d-flex w-100 flex-grow-1 todo-input" />
+                    <input type="text" name="txtTodo" @bind-value="todo.Text" @onkeydown="CheckKeyPress" placeholder="Todo" class="w-100 todo-input" />
                 </div>
+                <div class="col-12 text-white text-right" style="font-size:10px">Press Enter to add Todo.</div>
             </div>
 
-            <div class="row pb-3">
-                <div class="col-12 p-4 mt-5 priority-container">
-                    <h4 class="mx-auto">High Priority</h4>
-                    @if (todos.Count > 0) {
-                        <div class="col-12">
-                            @foreach (TodoClass t in todos) {
-                                if (t.Priority == "High") {<TodoComponent self="@t" />}
-                            }
-                        </div>
-                    }
-                </div>
-                <div class="col-12 p-4 my-4 priority-container">
-                    <h4 class="mx-auto">Medium Priority</h4>
-                    @if (todos.Count > 0) {
-                        <div class="col-12">
-                            @foreach (TodoClass t in todos) {
-                                if (t.Priority == "Medium") {<TodoComponent self="@t" />}
-                            }
-                        </div>
-                    }
-                </div>
-                <div class="col-12 p-4 priority-container">
-                    <h4 class="mx-auto">Low Priority</h4>
-                    @if (todos.Count > 0) {
-                        <div class="col-12">
-                            @foreach (TodoClass t in todos) {
-                                if (t.Priority == "Low") {<TodoComponent self="@t" />}
-                            }
-                        </div>
-                    }
-                </div>
+            <div class="row p-3">
+                <TodoCatagory CatagoryModels="Data.Displayed"/>
             </div>
 
         </div>
     </div>
+
 </div>
 
 
 
 @code {
-    public static List<TodoClass> todos { get; set; } = new List<TodoClass>();
 
-    private string Priority { get; set; } = "Medium";
-    private DateTime current { get; set; } = DateTime.Now.AddHours(5.5);
-    private TodoClass todo { get; set; } = new TodoClass();
+    public static TodoClass todo { get; set; } = new TodoClass();
 
-    protected override Task OnInitializedAsync() {
+    protected override async Task OnInitializedAsync()
+    {
+        Logic logic = new Logic(localStore);
 
-        var timer = new Timer(new TimerCallback(_ => {
-            current = DateTime.Now.AddHours(5.5);
+        if (await localStore.ContainKeyAsync("stored"))
+        {
+            Data.Stored = await logic.GetStoredFromLocalStore();
+        }
+        else
+        {
+            await logic.SaveStoredToLocalStore();
+        }
 
-            // Note that the following line is necessary because otherwise
-            // Blazor would not recognize the state change and not refresh the UI
-            this.StateHasChanged();
-        }), DateTime.Now, 500, 500);
+        if (await localStore.ContainKeyAsync("displayed"))
+        {
+            Data.Displayed = await logic.GetDisplayedFromLocalStore();
+        }
+        else
+        {
+            await logic.SaveDisplayedToLocalStore();
+        }
 
-
-        return base.OnInitializedAsync();
+        await base.OnInitializedAsync();
     }
 
-    private void AddTodo() {
-        if (todo.Text != "" && todo.Text != null) {
-            todo.TimeAdded = DateTime.Now.AddHours(5.5);
-            todo.Priority = Priority;
-            todos.Add(todo);
+    private async Task AddTodo()
+    {
+        if (todo.Text != "" && todo.Text != null && todo.CatagoryName != "")
+        {
+            await new Logic(localStore).AddTodoInDisplay(todo);
             todo = new TodoClass();
         }
     }
 
-    private void CheckKeyPress(KeyboardEventArgs args) {
-        switch (args.Key) {
+    private async Task CheckKeyPress(KeyboardEventArgs args)
+    {
+        switch (args.Key)
+        {
             case "Enter":
-                AddTodo();
+                await AddTodo();
                 break;
 
             default:
@@ -116,4 +96,89 @@
         }
     }
 
+    private void ShowAddCatagory()
+    {
+        Data.ShowCatagory = true;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*<label class="my-auto">Set Priority:</label>
+    <label class="d-flex mx-2 my-auto" style="cursor:pointer">
+        <input type="radio" name="chkBxPriority" class="my-auto" style="cursor: pointer; width: 1.2em; height: 1.2em;" value="High" @onchange="(e => { Priority = e.Value.ToString(); })" />
+        <div class="ml-2 my-auto">High</div>
+    </label>
+    <label class="d-flex mx-2 my-auto" style="cursor:pointer">
+        <input type="radio" name="chkBxPriority" class="my-auto" checked style="cursor: pointer; width: 1.2em; height: 1.2em;" value="Medium" @onchange="(e => { Priority = e.Value.ToString(); })" />
+        <div class="ml-2 my-auto">Medium</div>
+    </label>
+    <label class="d-flex mx-2 my-auto" style="cursor:pointer">
+        <input type="radio" name="chkBxPriority" class="my-auto" style="cursor: pointer; width: 1.2em; height: 1.2em;" value="Low" @onchange="(e => { Priority = e.Value.ToString(); })" />
+        <div class="ml-2 my-auto">Low</div>
+    </label>*@
+
+
+@*<div class="input-group todo-input-container">
+        <input type="text" name="txtTodo" @bind="todo.Text" @oninput="(e=> { todo.Text = e.Value.ToString(); })" @onkeydown="CheckKeyPress" placeholder="Todo" class="todo-input w-100" />
+        <div class="input-group-append">
+            <button class="btn btn-outline-primary">Add</button>
+        </div>
+    </div>*@
+
+
+
+
+
+@*<div class="row pb-3">
+        <div class="col-12 p-4 mt-5 priority-container">
+            <h4 class="mx-auto">High Priority</h4>
+            @if (todos.Count > 0)
+            {
+                <div class="col-12">
+                    @foreach (TodoClass thisTodo in todos)
+                    {
+                        if (thisTodo.Catagory == "High")
+                        {<TodoComponent self="@thisTodo" />}
+                    }
+                </div>
+            }
+        </div>
+        <div class="col-12 p-4 my-4 priority-container">
+            <h4 class="mx-auto">Medium Priority</h4>
+            @if (todos.Count > 0)
+            {
+                <div class="col-12">
+                    @foreach (TodoClass thisTodo in todos)
+                    {
+                        if (thisTodo.Catagory == "Medium")
+                        {<TodoComponent self="@thisTodo" />}
+                    }
+                </div>
+            }
+        </div>
+        <div class="col-12 p-4 priority-container">
+            <h4 class="mx-auto">Low Priority</h4>
+            @if (todos.Count > 0)
+            {
+                <div class="col-12">
+                    @foreach (TodoClass thisTodo in todos)
+                    {
+                        if (thisTodo.Catagory == "Low")
+                        {<TodoComponent self="@thisTodo" />}
+                    }
+                </div>
+            }
+        </div>
+    </div>*@

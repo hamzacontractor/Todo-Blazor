@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "D+2PVYjKUmZ08XIdOKhA83edXi9R+AfW+IAzRbItvuTWVb6IYaUV+NxSY+4kVTfi0rETnIZD98VdDhV6mEKjrA==",
+  "dgSpecHash": "Iy9TmxQ4pBU2zN5QO+mltfFeku9nrt+uRG0LATX5GqXMg+m0u1Z76lLfT0+zqUZpe6Bv9wQEV+1CDXEyo/dYPQ==",
   "success": true,
   "projectFilePath": "D:\\Blazor Apps\\Todo Blazor App\\TodoBlazorApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Hamza Contractor\\.nuget\\packages\\blazored.localstorage\\3.0.0\\blazored.localstorage.3.0.0.nupkg.sha512",
     "C:\\Users\\Hamza Contractor\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\Hamza Contractor\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",
     "C:\\Users\\Hamza Contractor\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.6\\microsoft.aspnetcore.components.analyzers.3.1.6.nupkg.sha512",

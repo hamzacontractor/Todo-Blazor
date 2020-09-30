@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-jjvPCEqcuD6vZj7Cz+nPCW5BjBZ8jg\/trTSGMidhCIk=",
+      "hash": "sha256-631r+RIpjvL\/FFBVyVYOneXRVHisCn2Ndb+foBrK6VA=",
       "url": "css\/app.css"
     },
     {
@@ -73,7 +73,7 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-Qa2awVZYnUhpumvD3a+HohNfNKthX7bDj7hoUkir5Lc=",
+      "hash": "sha256-JBTheQVlGm2fJZ11JgMTrDxCqtKvTuZAtpwAiMZvEzs=",
       "url": "_framework\/_bin\/TodoBlazorApp.dll"
     },
     {
@@ -277,7 +277,11 @@
       "url": "_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll"
     },
     {
-      "hash": "sha256-4QHsuT7E5rLinjx6+pVL9fq8irnW7sveX6lnOB9mbPc=",
+      "hash": "sha256-7+FtaZd2xSysaMLC59XhYdtkNMZ15ha0lk73dxPdT5w=",
+      "url": "_framework\/_bin\/Blazored.LocalStorage.dll"
+    },
+    {
+      "hash": "sha256-BNhQ8MFuAOzy6vJ+wtVOJpnZkmEJeV4vd6jzUok2hzo=",
       "url": "_framework\/_bin\/TodoBlazorApp.pdb"
     },
     {
@@ -297,9 +301,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-W7K+QqzBBTW0sBGPPV013qBAU0pXidbX\/UmGW+M\/2v8=",
+      "hash": "sha256-qOSf0dYmIPfApvvWjVfMLxo71W2H3WtzHGdr3r\/s8Yg=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "StFX7HS4"
+  "version": "LVMugc8u"
 };
