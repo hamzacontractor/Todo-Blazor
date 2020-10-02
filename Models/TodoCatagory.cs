@@ -13,7 +13,11 @@ namespace TodoBlazorApp.Models
       public List<TodoClass> Todos { get; set; } = new List<TodoClass>();
       public string AverageTimeSpan { get; set; } = "";
 
-      public TodoCatagoryModel() { }
+      public TodoCatagoryModel()
+      {
+         Name = "";
+         SpanUnit = new char();
+      }
       public TodoCatagoryModel(string name, char spanUnit)
       {
          Name = name;

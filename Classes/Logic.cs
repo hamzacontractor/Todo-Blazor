@@ -10,102 +10,93 @@ using TodoBlazorApp.Pages;
 
 namespace TodoBlazorApp
 {
-   public class Logic
-   {
-      private readonly ILocalStorageService localStore;
+   //public class Logic
+   //{
+   //   public async Task AddNewCatagory(TodoCatagoryModel catagory, ILocalStorageService localStore)
+   //   {
+   //      Data.Stored.Add(catagory);
+   //      Data.Displayed.Add(catagory);
 
-      public Logic(ILocalStorageService _localStore)
-      {
-         localStore = _localStore;
-      }
+   //      await SaveDisplayedToLocalStore(localStore);
+   //      await SaveStoredToLocalStore(localStore);
+   //   }
+
+   //   public async Task RemoveCatagory(TodoCatagoryModel catagory, ILocalStorageService localStore)
+   //   {
+   //      Data.Displayed.Remove(catagory);
+   //      Data.Stored.Remove(catagory);
+
+   //      await SaveDisplayedToLocalStore(localStore);
+   //      await SaveStoredToLocalStore(localStore);
+   //   }
 
 
 
-      public async Task AddNewCatagory(TodoCatagoryModel catagory)
-      {
-         Data.Displayed.Add(catagory);
-         await SaveDisplayedToLocalStore();
+   //   public async Task SaveTodoToStored(TodoClass todo, ILocalStorageService localStore)
+   //   {
+   //      TodoCatagoryModel todoCatagory = Data.Stored
+   //                                           .Find(x => x.Name == todo.CatagoryName);
 
-         Data.Stored.Add(catagory);
-         await SaveStoredToLocalStore();
-      }
+   //      todoCatagory.TotalTimeSpan.Add(todo.TimeSpan);
 
-      public async Task RemoveCatagory(TodoCatagoryModel catagory) {
+   //      todoCatagory.Todos.Add(todo);
 
-         Data.Displayed.Remove(catagory);
-         await SaveDisplayedToLocalStore();
+   //      switch (todoCatagory.SpanUnit)
+   //      {
+   //         case 'M':
+   //            todoCatagory.AverageTimeSpan = (todoCatagory.TotalTimeSpan.TotalMinutes / todoCatagory.Todos.Count).ToString("###.##") + " Minutes";
+   //            break;
+   //         case 'H':
+   //            todoCatagory.AverageTimeSpan = (todoCatagory.TotalTimeSpan.TotalHours / todoCatagory.Todos.Count).ToString("###.##") + " Hours";
+   //            break;
+   //         case 'D':
+   //            todoCatagory.AverageTimeSpan = (todoCatagory.TotalTimeSpan.TotalDays / todoCatagory.Todos.Count).ToString("###.##") + " Days";
+   //            break;
+   //         default:
+   //            return;
+   //      }
 
-         Data.Stored.Remove(catagory);
-         await SaveStoredToLocalStore();
-      }
+   //      await SaveStoredToLocalStore(localStore);
+   //   }
+
+   //   public async Task SaveStoredToLocalStore(ILocalStorageService localStore)
+   //   {
+   //      await localStore.SetItemAsync("stored", Data.Stored);
+   //   }
+
+   //   public async Task<List<TodoCatagoryModel>> GetStoredFromLocalStore(ILocalStorageService localStore)
+   //   {
+   //      return await localStore.GetItemAsync<List<TodoCatagoryModel>>("displayed");
+   //   }
+
       
 
+   //   public async Task AddTodoInDisplay(TodoClass todo, ILocalStorageService localStore)
+   //   {
+   //      TodoCatagoryModel todoCatagory = Data.Displayed
+   //                                           .Find(x => x.Name == todo.CatagoryName);
+   //      todoCatagory.Todos.Add(todo);
 
-      public async Task SaveTodoToStored(TodoClass todo)
-      {
-         TodoCatagoryModel todoCatagory = Data.Stored
-                                              .Find(x => x.Name == todo.CatagoryName);
+   //      await SaveDisplayedToLocalStore(localStore);
+   //   }
 
-         todoCatagory.TotalTimeSpan.Add(todo.TimeSpan);
+   //   public async Task RemoveTodoFromDisplayed(TodoClass todo, ILocalStorageService localStore)
+   //   {
+   //      Data.Displayed
+   //          .Find(x => x.Name == todo.CatagoryName)
+   //          .Todos.Remove(todo);
 
-         todoCatagory.Todos.Add(todo);
+   //      await SaveDisplayedToLocalStore(localStore);
+   //   }
 
-         switch (todoCatagory.SpanUnit)
-         {
-            case 'M':
-               todoCatagory.AverageTimeSpan = (todoCatagory.TotalTimeSpan.TotalMinutes / todoCatagory.Todos.Count).ToString("###.##") + " Minutes";
-               break;
-            case 'H':
-               todoCatagory.AverageTimeSpan = (todoCatagory.TotalTimeSpan.TotalHours / todoCatagory.Todos.Count).ToString("###.##") + " Hours";
-               break;
-            case 'D':
-               todoCatagory.AverageTimeSpan = (todoCatagory.TotalTimeSpan.TotalDays / todoCatagory.Todos.Count).ToString("###.##") + " Days";
-               break;
-            default:
-               return;
-         }
+   //   public async Task SaveDisplayedToLocalStore(ILocalStorageService localStore)
+   //   {
+   //      await localStore.SetItemAsync("displayed", Data.Displayed);
+   //   }
 
-         await SaveStoredToLocalStore();
-      }
-
-      public async Task SaveStoredToLocalStore()
-      {
-         await localStore.SetItemAsync("stored", Data.Stored);
-      }
-
-      public async Task<List<TodoCatagoryModel>> GetStoredFromLocalStore()
-      {
-         return await localStore.GetItemAsync<List<TodoCatagoryModel>>("displayed");
-      }
-
-
-
-      public async Task AddTodoInDisplay(TodoClass todo)
-      {
-         Data.Displayed
-             .Find(x => x.Name == todo.CatagoryName)
-             .Todos.Add(todo);
-
-         await SaveDisplayedToLocalStore();
-      }
-
-      public async Task RemoveTodoFromDisplayed(TodoClass todo)
-      {
-         Data.Displayed
-             .Find(x => x.Name == todo.CatagoryName)
-             .Todos.Remove(todo);
-
-         await SaveDisplayedToLocalStore();
-      }
-
-      public async Task SaveDisplayedToLocalStore()
-      {
-         await localStore.SetItemAsync("displayed", Data.Displayed);
-      }
-
-      public async Task<List<TodoCatagoryModel>> GetDisplayedFromLocalStore()
-      {
-         return await localStore.GetItemAsync<List<TodoCatagoryModel>>("displayed");
-      }
-   }
+   //   public async Task<List<TodoCatagoryModel>> GetDisplayedFromLocalStore(ILocalStorageService localStore)
+   //   {
+   //      return await localStore.GetItemAsync<List<TodoCatagoryModel>>("displayed");
+   //   }
+   //}
 }

@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\JBTheQVlGm2fJZ11JgMTrDxCqtKvTuZAtpwAiMZvEzs=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\uikmoBGyZBtvTkyLhcVEprBuIp8qudO2TbcPaYcbCFM=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TodoBlazorApp.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TodoBlazorApp.dll.gz"
     },
@@ -261,7 +261,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\BNhQ8MFuAOzy6vJ_wtVOJpnZkmEJeV4vd6jzUok2hzo=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\1GRH6OrlmRhbrbhSKW_u8hGvNDDYBjxE6eYJSyxTspg=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TodoBlazorApp.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TodoBlazorApp.pdb.gz"
     },
@@ -286,12 +286,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\qOSf0dYmIPfApvvWjVfMLxo71W2H3WtzHGdr3r-s8Yg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\hxAeFQxwmN5K1H5A1Q2KhtgKxNV3y3ofl5qkDFQhrAM=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ayzBbeymNHDq2mEZuMUf3ENtj9k7IEA_Qsr7I5EzJsk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\FC5vVnT8bF0xNPlh-Z32-vio-NgxMPOL1y7DeuyMhRE=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.gz"
     }

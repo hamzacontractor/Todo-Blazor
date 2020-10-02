@@ -13,6 +13,7 @@ namespace TodoBlazorApp
 {
    public class Program
    {
+
       public static async Task Main(string[] args)
       {
          var builder = WebAssemblyHostBuilder.CreateDefault(args);
@@ -24,7 +25,7 @@ namespace TodoBlazorApp
             BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)
          });
 
-         builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
+         builder.Services.AddSingleton<ILocalStorageService, LocalStorageService>();
 
          await builder.Build().RunAsync();
       }

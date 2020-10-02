@@ -5,7 +5,7 @@
 @inject Blazored.LocalStorage.ILocalStorageService localStore
 
 
-
+<button class="close btn btn-outline-danger px-3 py-2" style="position:absolute; top:6px; right:4px;" @onclick="HideAddNewCatagory">&times;</button>
 <div class="col-12 p-0" style="margin-top:35px;">
     <input type="text" placeholder="Catagory Name" @bind-value="CatagoryName" class="w-100 py-2 px-3" />
 </div>
@@ -42,7 +42,12 @@
     private async Task AddNewCatagory()
     {
         TodoCatagoryModel todoCatagory = new TodoCatagoryModel(CatagoryName, TimeSpanUnit);
-        await new Logic(localStore).AddNewCatagory(todoCatagory);
+
+        Data.Stored.Add(todoCatagory);
+        Data.Displayed.Add(todoCatagory);
+
+        await localStore.SetItemAsync("stored", Data.Stored);
+        await localStore.SetItemAsync("displayed", Data.Displayed);
     }
 
     void HideAddNewCatagory()
@@ -50,5 +55,8 @@
         Data.ShowCatagory = false;
     }
 
-    void SetTimeSpanUnit(ChangeEventArgs e) { TimeSpanUnit = e.Value.ToString().ToCharArray()[0]; }
+    void SetTimeSpanUnit(ChangeEventArgs e)
+    {
+        TimeSpanUnit = e.Value.ToString().ToCharArray()[0];
+    }
 }

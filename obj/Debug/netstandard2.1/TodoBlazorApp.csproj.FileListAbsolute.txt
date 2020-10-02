@@ -366,7 +366,8 @@ D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\TodoBlazorApp.pdb
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\serviceworkers\wwwroot\service-worker.js
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\blazor\service-worker-assets.js
 D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\TodoBlazorApp.csprojAssemblyReference.cache
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\JBTheQVlGm2fJZ11JgMTrDxCqtKvTuZAtpwAiMZvEzs=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\BNhQ8MFuAOzy6vJ_wtVOJpnZkmEJeV4vd6jzUok2hzo=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\qOSf0dYmIPfApvvWjVfMLxo71W2H3WtzHGdr3r-s8Yg=.hash
-D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\ayzBbeymNHDq2mEZuMUf3ENtj9k7IEA_Qsr7I5EzJsk=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\C9SPah_GHQV-eKwhU0bV26mWKq_UsjfsExhvPC-4W8I=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\uikmoBGyZBtvTkyLhcVEprBuIp8qudO2TbcPaYcbCFM=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\1GRH6OrlmRhbrbhSKW_u8hGvNDDYBjxE6eYJSyxTspg=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\hxAeFQxwmN5K1H5A1Q2KhtgKxNV3y3ofl5qkDFQhrAM=.hash
+D:\Blazor Apps\Todo Blazor App\obj\Debug\netstandard2.1\integrity\FC5vVnT8bF0xNPlh-Z32-vio-NgxMPOL1y7DeuyMhRE=.hash

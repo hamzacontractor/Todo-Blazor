@@ -1,4 +1,11 @@
-﻿<style>
+﻿
+
+
+@using System.Threading
+
+
+
+<style>
     label {
         font-size: 1.2em;
         font-weight: bold;
@@ -55,15 +62,31 @@
     </div>
     <div class="d-flex">
         <div class="d-flex position-relative flex-grow-1">
-            <select id="ddlSelectCatagory" class="my-auto flex-grow-1" @bind="SelectedCatagory">
+            @if (Data.Displayed == null)
+            {
+                <select disabled><option></option></select>
+            }
+            else
+            {
                 @if (Data.Displayed.Count > 0)
                 {
-                    foreach (TodoBlazorApp.Models.TodoCatagoryModel catagory in Data.Displayed)
-                    {
-                        <option value="@catagory.Name">@catagory.Name</option>
-                    }
+                    <select id="ddlSelectCatagory" class="my-auto flex-grow-1" value="@Data.Displayed[0].Name" @onchange="SetSelectedValue">
+                        @for (int i = 0; i < Data.Displayed.Count; i++)
+                        {
+                            TodoBlazorApp.Models.TodoCatagoryModel catagory = Data.Displayed[i];
+                            if (i == 0 && Data.Todo.CatagoryName == "")
+                            {
+                                Data.Todo.CatagoryName = catagory.Name;
+                            }
+                            <option value="@catagory.Name">@catagory.Name</option>
+                        }
+                    </select>
                 }
-            </select>
+                else
+                {
+                    <select disabled><option></option></select>
+                }
+            }
             <div class="select-icon">
                 <svg width="1.8em" height="3.2em" class="icon" viewBox="0 0 512 480">
                     <path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424   C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428   s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z" />
@@ -76,11 +99,21 @@
 
 
 @code {
-    [Parameter] public List<TodoBlazorApp.Models.TodoCatagoryModel> todoCatagoryModels { get; set; }
-    [Parameter] public string SelectedCatagory { get; set; } = "";
-
     protected override async Task OnInitializedAsync()
     {
+        var timer = new Timer(new TimerCallback(x =>
+        {
+            this.StateHasChanged();
+        }), DateTime.Now, 100, 100);
+
+        if (Data.Todo.CatagoryName == "" && Data.Displayed.Count > 0)
+            Data.Todo.CatagoryName = Data.Displayed[0].Name;
+
         await base.OnInitializedAsync();
+    }
+    void SetSelectedValue(ChangeEventArgs e)
+    {
+        Console.WriteLine(e.Value.ToString());
+        Data.Todo.CatagoryName = e.Value.ToString();
     }
 }

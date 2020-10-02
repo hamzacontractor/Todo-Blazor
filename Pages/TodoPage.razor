@@ -1,4 +1,5 @@
 ﻿
+@using System.Threading
 @using Models
 
 
@@ -6,69 +7,68 @@
 @inject Blazored.LocalStorage.ILocalStorageService localStore
 
 
-<div class="container">
+@if (Data.Todo != null)
+{
+    <div class="container" @onkeypress="CheckKeyPress">
 
-    <div class="row">
-        <div class="col-sm-12 col-md-10 col-lg-8 mx-auto">
-            <div class="row pt-3 pb-2" style="background-color: rgb(var(--code-primary)); position:sticky; position:-webkit-sticky; z-index:11; top:0">
-                <div class="col-12 justify-content-center">
-                    <DateTimeComponant />
-                </div>
-                <div class="col-12 mt-4 mb-2">
-                    <div class="d-flex justify-content-center">
-                        <SelectCatagory todoCatagoryModels="Data.Displayed" SelectedCatagory="@todo.CatagoryName" />
-
-                        <button class="btn btn-outline-light ml-5 mt-auto" @onclick="(() => { Data.ShowCatagory = true; })">New</button>
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-8 mx-auto">
+                <div class="row pt-3 pb-2" style="background-color: rgb(var(--code-primary)); position:sticky; position:-webkit-sticky; z-index:11; top:0">
+                    <div class="col-12 justify-content-center">
+                        <DateTimeComponant />
                     </div>
-                    @if (Data.ShowCatagory)
-                    {
-                        <div class="row my-2 p-3 position-relative" style="box-shadow: 1px 2px 3px 1px currentcolor, inset 1px 2px 3px 1px currentcolor">
-                            <button class="close btn btn-outline-danger px-3 py-2" style="position:absolute; top:6px; right:4px;" @onclick="(() => { Data.ShowCatagory = false; })">&times;</button>
-                            <AddCatagory />
+                    <div class="col-12 mt-4 mb-2">
+                        <div class="d-flex justify-content-center">
+                            <SelectCatagory />
+                            <button class="btn btn-outline-light ml-5 mt-auto" @onclick="(() => { Data.ShowCatagory = true; })">New</button>
                         </div>
-                    }
+                        @if (Data.ShowCatagory)
+                        {
+                            <div class="row my-2 p-3 position-relative" style="box-shadow: 1px 2px 3px 1px currentcolor, inset 1px 2px 3px 1px currentcolor">
+                                <AddCatagory />
+                            </div>
+                        }
+                    </div>
+                    <div class="col-12 todo-input-container bg-white">
+                        <input type="text" name="txtTodo" @bind="@Data.Todo.Text" @bind:event="oninput" placeholder="Todo" class="w-100 todo-input" />
+                    </div>
+                    <div class="col-12 text-white text-right" style="font-size:10px">Press Enter to add Todo.</div>
                 </div>
-                <div class="col-12 todo-input-container bg-white">
-                    <input type="text" name="txtTodo" @bind-value="todo.Text" @onkeydown="CheckKeyPress" placeholder="Todo" class="w-100 todo-input" />
-                </div>
-                <div class="col-12 text-white text-right" style="font-size:10px">Press Enter to add Todo.</div>
-            </div>
 
-            <div class="row p-3">
-                <TodoCatagory CatagoryModels="Data.Displayed"/>
-            </div>
+                <div class="row p-3"><TodoCatagory /></div>
 
+            </div>
         </div>
+
     </div>
-
-</div>
-
+}
 
 
 @code {
 
-    public static TodoClass todo { get; set; } = new TodoClass();
-
     protected override async Task OnInitializedAsync()
     {
-        Logic logic = new Logic(localStore);
-
-        if (await localStore.ContainKeyAsync("stored"))
+        var timer = new Timer(new TimerCallback(x =>
         {
-            Data.Stored = await logic.GetStoredFromLocalStore();
-        }
-        else
-        {
-            await logic.SaveStoredToLocalStore();
-        }
+            this.StateHasChanged();
+        }), DateTime.Now, 100, 100);
 
         if (await localStore.ContainKeyAsync("displayed"))
         {
-            Data.Displayed = await logic.GetDisplayedFromLocalStore();
+            Data.Displayed = await localStore.GetItemAsync<List<TodoCatagoryModel>>("displayed");
         }
         else
         {
-            await logic.SaveDisplayedToLocalStore();
+            await localStore.SetItemAsync("displayed", Data.Displayed);
+        }
+
+        if (await localStore.ContainKeyAsync("stored"))
+        {
+            Data.Stored = await localStore.GetItemAsync<List<TodoCatagoryModel>>("stored");
+        }
+        else
+        {
+            await localStore.SetItemAsync("stored", Data.Stored);
         }
 
         await base.OnInitializedAsync();
@@ -76,10 +76,16 @@
 
     private async Task AddTodo()
     {
-        if (todo.Text != "" && todo.Text != null && todo.CatagoryName != "")
+        if (Data.Todo.Text != "" && Data.Todo.CatagoryName != "")
         {
-            await new Logic(localStore).AddTodoInDisplay(todo);
-            todo = new TodoClass();
+            Data.Todo.TimeAdded = DateTime.Now.AddHours(5.5);
+            Data.Displayed
+                .Find(x => x.Name == Data.Todo.CatagoryName)
+                .Todos.Add(Data.Todo);
+
+            await localStore.SetItemAsync("displayed", Data.Displayed);
+
+            Data.Todo = new TodoClass();
         }
     }
 
@@ -92,7 +98,7 @@
                 break;
 
             default:
-                break;
+                return;
         }
     }
 
