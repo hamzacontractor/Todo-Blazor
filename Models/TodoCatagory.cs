@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 
 namespace TodoBlazorApp.Models
 {
+
    public class TodoCatagoryModel
    {
+
       public string Name { get; set; }
       public char SpanUnit { get; set; }
-      public TimeSpan TotalTimeSpan { get; set; } = new TimeSpan();
       public List<TodoClass> Todos { get; set; } = new List<TodoClass>();
-      public string AverageTimeSpan { get; set; } = "";
+      public long TotalSpan { get; set; }
 
       public TodoCatagoryModel()
       {

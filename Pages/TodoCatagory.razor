@@ -2,32 +2,79 @@
 @using System.Threading
 @using Models
 
-@inject ILocalStorageService localStore
 
 
-@if (Data.Displayed.Count > 0)
+@if (Data.Displayed != null)
 {
-    foreach (TodoCatagoryModel todoCatagory in Data.Displayed)
+    @foreach (TodoCatagoryModel todoCatagory in Data.Displayed)
     {
+        string avg;
+        TimeSpan span = new TimeSpan(todoCatagory.TotalSpan);
+        int storedTodosCount = Data.Stored.Find(x => x.Name == todoCatagory.Name).Todos.Count;
+        if (storedTodosCount == 0)
+            storedTodosCount = 1;
+
+        switch (todoCatagory.SpanUnit)
+        {
+            case 'M':
+                avg = Math.Truncate(span.TotalMinutes / storedTodosCount * 100) / 100 + " Minutes  |  Todo";
+                break;
+            case 'H':
+                avg = Math.Truncate(span.TotalHours / storedTodosCount * 100) / 100 + " Hours  |  Todo";
+                break;
+            case 'D':
+                avg = Math.Truncate(span.TotalDays / storedTodosCount * 100) / 100 + " Days  |  Todo";
+                break;
+            default:
+                return;
+        }
+
+        Console.WriteLine($"Cat:{todoCatagory.Name},  TS:{span.TotalMinutes.ToString()}");
+
         <div class="col-12 p-4 mt-5 priority-container">
-            <button type="button" class="btn btn-outline-danger position-absolute border-0" style="top:6px; right:4px;" @onclick="(e => { RemoveCatagory(todoCatagory); Console.WriteLine(e.Type); })">&times;</button>
+            <button type="button" class="btn btn-outline-danger position-absolute border-0" style="top:6px; right:4px;" @onclick="(async e => { await RemoveCatagory(todoCatagory.Name); })">&times;</button>
             <h4>@todoCatagory.Name</h4>
             @if (todoCatagory.Todos.Count > 0)
             {
                 foreach (TodoClass thisTodo in todoCatagory.Todos)
                 {
                     <div class="col-12">
-                        <TodoComponent ThisTodo="@thisTodo" />
+                        <TodoComponent ThisTodo="thisTodo" UpdateTodoList="UpdateTodoList" SpanUnit="todoCatagory.SpanUnit" CatagoryName="@todoCatagory.Name" />
                     </div>
                 }
             }
-            <p>Average Completion Time: @todoCatagory.AverageTimeSpan</p>
+            <div class="ml-4 mb-1 mt-5" style="font-size:.9em;">Average:</div>
+            <div class="badge badge-pill badge-primary font-weight-light" style="font-size:1.1em;">@avg</div>
         </div>
     }
 }
 
 @code{
-    protected override Task OnInitializedAsync()
+
+    [Parameter] public EventCallback UpdateTodoList { get; set; }
+
+    async Task RemoveCatagory(string CatagoryName)
+    {
+        Data.Stored.Remove((Data.Stored.Find(x => x.Name == CatagoryName)));
+
+        Data.Displayed.Remove((Data.Displayed.Find(x => x.Name == CatagoryName)));
+
+        await UpdateTodoList.InvokeAsync(new EventCallback());
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@*protected override Task OnInitializedAsync()
     {
 
         var timer = new Timer(new TimerCallback(x =>
@@ -36,15 +83,4 @@
         }), DateTime.Now, 100, 100);
 
         return base.OnInitializedAsync();
-    }
-
-    async Task RemoveCatagory(TodoCatagoryModel todoCatagory)
-    {
-        Data.Stored.Remove(todoCatagory);
-        await localStore.SetItemAsync("stored", Data.Stored);
-
-        Data.Displayed.Remove(todoCatagory);
-        await localStore.SetItemAsync("displayed", Data.Displayed);
-    }
-
-}
+    }*@

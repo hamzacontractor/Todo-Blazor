@@ -2,6 +2,7 @@
 
 
 @using System.Threading
+@using Models
 
 
 
@@ -63,29 +64,21 @@
     <div class="d-flex">
         <div class="d-flex position-relative flex-grow-1">
             @if (Data.Displayed == null)
-            {
-                <select disabled><option></option></select>
-            }
+            {<select disabled><option></option></select> }
             else
             {
                 @if (Data.Displayed.Count > 0)
                 {
-                    <select id="ddlSelectCatagory" class="my-auto flex-grow-1" value="@Data.Displayed[0].Name" @onchange="SetSelectedValue">
+                    <select id="ddlSelectCatagory" class="my-auto flex-grow-1" @onchange="SelectedValueChanged">
                         @for (int i = 0; i < Data.Displayed.Count; i++)
                         {
                             TodoBlazorApp.Models.TodoCatagoryModel catagory = Data.Displayed[i];
-                            if (i == 0 && Data.Todo.CatagoryName == "")
-                            {
-                                Data.Todo.CatagoryName = catagory.Name;
-                            }
                             <option value="@catagory.Name">@catagory.Name</option>
                         }
                     </select>
                 }
                 else
-                {
-                    <select disabled><option></option></select>
-                }
+                { <select disabled><option></option></select>}
             }
             <div class="select-icon">
                 <svg width="1.8em" height="3.2em" class="icon" viewBox="0 0 512 480">
@@ -99,21 +92,29 @@
 
 
 @code {
-    protected override async Task OnInitializedAsync()
-    {
-        var timer = new Timer(new TimerCallback(x =>
-        {
-            this.StateHasChanged();
-        }), DateTime.Now, 100, 100);
 
-        if (Data.Todo.CatagoryName == "" && Data.Displayed.Count > 0)
-            Data.Todo.CatagoryName = Data.Displayed[0].Name;
+    [Parameter] public EventCallback UpdateTodoList { get; set; }
 
-        await base.OnInitializedAsync();
-    }
-    void SetSelectedValue(ChangeEventArgs e)
-    {
-        Console.WriteLine(e.Value.ToString());
-        Data.Todo.CatagoryName = e.Value.ToString();
-    }
+    [Parameter] public EventCallback<ChangeEventArgs> SelectedValueChanged { get; set; }
+
+    //protected override async Task OnInitializedAsync()
+    //{
+    //    //var timer = new Timer(new TimerCallback(x =>
+    //    //{
+    //    //    this.StateHasChanged();
+    //    //}), DateTime.Now, 100, 100);
+
+    //    //if (SelectedValue == "" && Data.Displayed.Count > 0)
+    //    //    SelectedValue = Data.Displayed[0].Name;
+
+    //    Console.WriteLine($"OIA-SelectCatagory @ {DateTime.Now.AddHours(5.5).ToLocalTime()}");
+
+    //    await UpdateTodoList.InvokeAsync(new EventCallback());
+    //}
+    //async Task SetSelectedValue(ChangeEventArgs e)
+    //{
+    //    SelectedValue = e.Value.ToString();
+
+    //    await UpdateList.InvokeAsync(new EventCallback());
+    //}
 }

@@ -2,8 +2,6 @@
 
 @using TodoBlazorApp.Models
 
-@inject Blazored.LocalStorage.ILocalStorageService localStore
-
 
 <button class="close btn btn-outline-danger px-3 py-2" style="position:absolute; top:6px; right:4px;" @onclick="HideAddNewCatagory">&times;</button>
 <div class="col-12 p-0" style="margin-top:35px;">
@@ -36,23 +34,25 @@
 
 
 @code {
-    private char TimeSpanUnit { get; set; } = 'H';
-    private string CatagoryName { get; set; } = "";
+    [Parameter] public EventCallback UpdateTodoList { get; set; }
 
-    private async Task AddNewCatagory()
+    [Parameter] public EventCallback<bool> ShowCatagory { get; set; }
+
+    char TimeSpanUnit { get; set; } = 'H';
+
+    string CatagoryName { get; set; } = "";
+
+    async Task AddNewCatagory()
     {
-        TodoCatagoryModel todoCatagory = new TodoCatagoryModel(CatagoryName, TimeSpanUnit);
+        Data.Stored.Add(new TodoCatagoryModel(CatagoryName, TimeSpanUnit));
+        Data.Displayed.Add(new TodoCatagoryModel(CatagoryName, TimeSpanUnit));
 
-        Data.Stored.Add(todoCatagory);
-        Data.Displayed.Add(todoCatagory);
-
-        await localStore.SetItemAsync("stored", Data.Stored);
-        await localStore.SetItemAsync("displayed", Data.Displayed);
+        await UpdateTodoList.InvokeAsync(new EventCallback());
     }
 
     void HideAddNewCatagory()
     {
-        Data.ShowCatagory = false;
+        ShowCatagory.InvokeAsync(false);
     }
 
     void SetTimeSpanUnit(ChangeEventArgs e)

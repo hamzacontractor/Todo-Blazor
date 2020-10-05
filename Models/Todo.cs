@@ -11,9 +11,8 @@ namespace TodoBlazorApp.Models
       public DateTime TimeAdded { get; set; } = new DateTime();
       public DateTime TimeCompleted { get; set; } = new DateTime();
       public bool Done { get; set; } = false;
-      public TimeSpan TimeSpan { get; set; } = new TimeSpan();
-      public char SpanUnit { get; set; } = new char();
-      public string CatagoryName { get; set; } = "";
+      //public TimeSpan TimeSpan { get; set; } = new TimeSpan();
+      //public string CatagoryName { get; set; } = "";
 
    }
 }

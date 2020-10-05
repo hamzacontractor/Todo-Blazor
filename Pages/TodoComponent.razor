@@ -1,20 +1,45 @@
 ﻿
 @using Models
 
-@inject Blazored.LocalStorage.ILocalStorageService localStore
 
 
 @{
     string cls = "todo-container";
     if (ThisTodo.Done)
         cls = " todo-container-done ";
+
+    string CompletedIn = "";
+
+    TimeSpan span = ThisTodo.TimeCompleted.Subtract(ThisTodo.TimeAdded);
+
+    switch (SpanUnit)
+    {
+        case 'M':
+            CompletedIn = Math.Truncate(span.TotalMinutes * 100) / 100 + " Minutes";
+            break;
+        case 'H':
+            CompletedIn = Math.Truncate(span.TotalHours * 100) / 100 + " Hours";
+            break;
+        case 'D':
+            CompletedIn = Math.Truncate(span.TotalDays * 100) / 100 + " Days";
+            break;
+        default:
+            return;
+    }
 }
 
 
 <div class="row my-3 p-2 @cls" style="font-size:1.2em;">
     <div class="col-12 px-2 my-1">
         <label class="d-flex" style="cursor:pointer;">
-            <input type="checkbox" name="chkDone" @bind="ThisTodo.Done" @onclick="Toggle" class="my-auto" style="width:1.2em; height:1.2em; cursor:pointer;" />
+            @if (ThisTodo.Done)
+            {
+                <input checked type="checkbox" name="chkDone" @onclick="(async e => { await Toggle(e); })" class="my-auto" style="width:1.2em; height:1.2em; cursor:pointer;" />
+            }
+            else
+            {
+                <input type="checkbox" name="chkDone" @onclick="(async e => { await Toggle(e); })" class="my-auto" style="width:1.2em; height:1.2em; cursor:pointer;" />
+            }
 
             @if (ThisTodo.Done)
             {
@@ -26,29 +51,31 @@
             }
 
         </label>
-
     </div>
     <div class="col-12 px-2 my-1" style="font-size:.65em;">
         <div class="row">
             <div class="col-auto">
-                <span class="mr-2">Added On</span>@ThisTodo.TimeAdded.ToString("dddd, dd MMMM yyyy hh:mm tt")
+                <span class="mr-2"> Added On </span> @ThisTodo.TimeAdded.ToString("dddd, dd MMMM yyyy hh:mm tt")
             </div>
         </div>
         @if (ThisTodo.Done)
         {
             <div class="row justify-content-between">
-                <div class="row justify-content-between">
-                    <div class="col-auto"><span class="mr-2">Completed On</span>@ThisTodo.TimeCompleted.ToString("dddd, dd MMMM yyyy hh:mm tt") </div>
+                <div class="row justify-content-between flex-column">
+                    <div class="col-auto">
+                        <span class="mr-2"> Completed On </span> @ThisTodo.TimeCompleted.ToString("dddd, dd MMMM yyyy hh:mm tt")
+                    </div>
+                    <div class="col-auto">
+                        <span class="mr-2">Completed In:</span> @CompletedIn
+                    </div>
                 </div>
-                <div class="col-auto"><span class="mr-2">Completed In</span></div>
-
             </div>
         }
     </div>
-    <button type="button" class="btn btn-sm btn-danger position-absolute" style="font-size:.6em; top:.5em; right:.5em;" @onclick="RemoveTodo">&times;</button>
+    <button type="button" class="btn btn-sm btn-danger position-absolute" style="font-size:.6em; top:.5em; right:.5em;" @onclick="RemoveTodo"> &times;</button>
     @if (ThisTodo.Done)
     {
-        <button type="button" class="btn btn-sm btn-success position-absolute" style="font-size:.6em; bottom:.5em; right:.5em;" @onclick="StoreTodo">Save</button>
+        <button type="button" class="btn btn-sm btn-success position-absolute" style="font-size:.6em; bottom:.5em; right:.5em;" @onclick="StoreTodo"> Save </button>
     }
 </div>
 
@@ -58,63 +85,65 @@
 
     [Parameter] public TodoClass ThisTodo { get; set; } = new TodoClass();
 
+    [Parameter] public EventCallback UpdateTodoList { get; set; }
+
+    [Parameter] public char SpanUnit { get; set; } = new char();
+
+    [Parameter] public string CatagoryName { get; set; } = "";
+
     private async Task RemoveTodo()
     {
         Data.Displayed
-            .Find(x => x.Name == ThisTodo.CatagoryName)
+            .Find(x => x.Name == CatagoryName)
             .Todos.Remove(ThisTodo);
 
-        await localStore.SetItemAsync("displayed", Data.Displayed);
+        await UpdateTodoList.InvokeAsync(new EventCallback());
     }
 
-    private async Task StoreTodo(MouseEventArgs e)
+    async Task StoreTodo(MouseEventArgs e)
     {
-        TodoCatagoryModel todoCatagory = Data.Stored
-                                             .Find(x => x.Name == ThisTodo.CatagoryName);
+        TodoCatagoryModel displayedTodoCatgory = Data.Displayed
+                                                     .Find(x => x.Name == CatagoryName);
 
-        todoCatagory.TotalTimeSpan.Add(ThisTodo.TimeSpan);
-        if (todoCatagory.Todos.Count == 0)
-            todoCatagory.TotalTimeSpan = ThisTodo.TimeSpan;
+        displayedTodoCatgory.TotalSpan += ThisTodo.TimeCompleted.Subtract(ThisTodo.TimeAdded).Ticks;
 
-        todoCatagory.Todos.Add(ThisTodo);
+        Console.WriteLine(displayedTodoCatgory.TotalSpan.ToString());
 
-        double val;
-
-        switch (todoCatagory.SpanUnit)
-        {
-            case 'M':
-                val = Math.Truncate(todoCatagory.TotalTimeSpan.TotalMinutes / todoCatagory.Todos.Count * 100) / 100;
-                todoCatagory.AverageTimeSpan = val.ToString() + " Minutes";
-                break;
-            case 'H':
-                val = Math.Truncate(todoCatagory.TotalTimeSpan.TotalHours / todoCatagory.Todos.Count * 100) / 100;
-                todoCatagory.AverageTimeSpan = val.ToString() + " Hours";
-                break;
-            case 'D':
-                val = Math.Truncate(todoCatagory.TotalTimeSpan.TotalDays / todoCatagory.Todos.Count * 100) / 100;
-                todoCatagory.AverageTimeSpan = val.ToString() + " Days";
-                break;
-            default:
-                return;
-        }
-
-        Console.WriteLine($"Data:- Stored.Count:{Data.Stored.Count},  Displayed.Count:{Data.Displayed.Count},  Todo.Text:{Data.Todo.Text}");
-        Console.WriteLine($"todoCatagory:- TotalTimeSpan:{todoCatagory.TotalTimeSpan},  VAL:{val}");
-        Console.WriteLine($"ThisTodo: Text:{ThisTodo.Text},  Add:{ThisTodo.TimeAdded},  Comp:{ThisTodo.TimeCompleted},  TimeSpan:{ThisTodo.TimeSpan}");
-
-        await localStore.SetItemAsync("stored", Data.Stored);
+        Data.Stored
+            .Find(x => x.Name == CatagoryName)
+            .Todos.Add(ThisTodo);
 
         await RemoveTodo();
     }
 
-    private void Toggle(MouseEventArgs e)
+    async Task Toggle(MouseEventArgs e)
     {
+        TodoClass todo = Data.Displayed
+                             .Find(x => x.Name == CatagoryName)
+                             .Todos
+                             .Find(x => x.Text == ThisTodo.Text && x.TimeAdded == ThisTodo.TimeAdded);
 
-        ThisTodo.TimeCompleted = DateTime.Now
-                                 .AddHours(5.5);
+        todo.TimeCompleted = ThisTodo.TimeCompleted = DateTime.Now.AddHours(5.5);
 
-        ThisTodo.TimeSpan = ThisTodo.TimeCompleted.Subtract(ThisTodo.TimeAdded);
+        todo.Done = ThisTodo.Done = !ThisTodo.Done;
 
+        await UpdateTodoList.InvokeAsync(new EventCallback());
     }
 
 }
+
+
+
+
+
+
+
+@*//Console.WriteLine($"Data:- Catagory.TotalTimeSpan:{Data.Displayed.Find(x => x.Name == ThisTodo.CatagoryName).TotalTimeSpan}");
+
+    //Console.WriteLine($"Data:- Todo.TimeCompleted:{Data.Displayed.Find(x => x.Name == ThisTodo.CatagoryName).Todos.Find(x => x.Text == ThisTodo.Text).TimeCompleted}");
+
+    //
+
+    //Console.WriteLine($"Data:- Todo.TimeCompleted:{Data.Displayed.Find(x => x.Name == ThisTodo.CatagoryName).Todos.Find(x => x.Text == ThisTodo.Text).TimeCompleted}");
+
+    //*@
