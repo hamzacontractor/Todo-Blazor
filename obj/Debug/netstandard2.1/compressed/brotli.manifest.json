@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\FMGLMqJHzcDIZl1vL2J8Wh7uVXFFn66xfvPM1oxVdlo=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ydyVuEp7W2oTozT8nP9sjBSO3FWp0IaS9bMFY_DDJQw=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TodoBlazorApp.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TodoBlazorApp.dll.br"
     },
@@ -261,7 +261,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\iTJ4-Mfkh-_ePajHgJ-9nGXgnP0VFjrEpocslcm5jwM=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\xJYrJSTVrOtXPwRwyfWDpIryqyQ0AhQ5JQsSZjAc6EM=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\TodoBlazorApp.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/TodoBlazorApp.pdb.br"
     },
@@ -286,12 +286,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\AZYQRVQJFZOs9cWlBlfdA4H0PggEax-GcGUyVPOSNEA=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\GEg3KqJ4rw6pIfLyOKOOiKb0gNoWslyuO8reqVhltR8=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\1fxK8DyM6-3kMdv09PM3O2v1Uj4Z3sKVL7Bjd_lY_Qk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\1k5vh6efVsmfS4VOrz1ASasG46tfzewbr_fi3pkp-9Q=.hash",
       "Source": "D:\\Blazor Apps\\Todo Blazor App\\obj\\Debug\\netstandard2.1\\blazor\\service-worker-assets.js",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\service-worker-assets.js.br"
     }

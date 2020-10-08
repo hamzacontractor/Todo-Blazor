@@ -43,7 +43,7 @@
 
     .select-icon {
         position: absolute;
-        right: 4px;
+        right: 10px;
         pointer-events: none;
         transition: background-color 0.3s ease, border-color 0.3s ease;
     }
@@ -51,20 +51,17 @@
         .select-icon svg.icon {
             fill: rgb(var(--code-primary));
         }
-
+/*
     select:focus ~ .select-icon svg.icon {
         display: none;
-    }
+    }*/
 </style>
 
-<div class="w-100 d-flex flex-column">
-    <div class="d-flex">
-        <label for="ddlSelectCatagory" class="my-auto">Select Catagory</label>
-    </div>
+<div class="w-100 d-flex flex-column my-auto mx-3">
     <div class="d-flex">
         <div class="d-flex position-relative flex-grow-1">
             @if (Data.Displayed == null)
-            {<select disabled><option></option></select> }
+            {<select class="my-auto flex-grow-1" disabled><option></option></select> }
             else
             {
                 @if (Data.Displayed.Count > 0)
@@ -78,10 +75,10 @@
                     </select>
                 }
                 else
-                { <select disabled><option></option></select>}
+                { <select class="my-auto flex-grow-1" disabled><option></option></select>}
             }
             <div class="select-icon">
-                <svg width="1.8em" height="3.2em" class="icon" viewBox="0 0 512 480">
+                <svg width="2.1em" height="3.8em" class="icon" viewBox="0 0 512 480">
                     <path d="M286.935,69.377c-3.614-3.617-7.898-5.424-12.848-5.424H18.274c-4.952,0-9.233,1.807-12.85,5.424   C1.807,72.998,0,77.279,0,82.228c0,4.948,1.807,9.229,5.424,12.847l127.907,127.907c3.621,3.617,7.902,5.428,12.85,5.428   s9.233-1.811,12.847-5.428L286.935,95.074c3.613-3.617,5.427-7.898,5.427-12.847C292.362,77.279,290.548,72.998,286.935,69.377z" />
                 </svg>
             </div>
@@ -96,25 +93,4 @@
     [Parameter] public EventCallback UpdateTodoList { get; set; }
 
     [Parameter] public EventCallback<ChangeEventArgs> SelectedValueChanged { get; set; }
-
-    //protected override async Task OnInitializedAsync()
-    //{
-    //    //var timer = new Timer(new TimerCallback(x =>
-    //    //{
-    //    //    this.StateHasChanged();
-    //    //}), DateTime.Now, 100, 100);
-
-    //    //if (SelectedValue == "" && Data.Displayed.Count > 0)
-    //    //    SelectedValue = Data.Displayed[0].Name;
-
-    //    Console.WriteLine($"OIA-SelectCatagory @ {DateTime.Now.AddHours(5.5).ToLocalTime()}");
-
-    //    await UpdateTodoList.InvokeAsync(new EventCallback());
-    //}
-    //async Task SetSelectedValue(ChangeEventArgs e)
-    //{
-    //    SelectedValue = e.Value.ToString();
-
-    //    await UpdateList.InvokeAsync(new EventCallback());
-    //}
 }

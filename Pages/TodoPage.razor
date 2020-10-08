@@ -8,33 +8,47 @@
 
 
 
-<div class="container" @onkeypress="CheckKeyPress">
 
-    <div class="row">
+<div class="container-fluid p-1" @onkeypress="CheckKeyPress">
+
+    <div class="col-12 justify-content-center bg-dark text-white py-2 px-3" style="position:absolute; top:0; left:0;right:0; z-index:11;">
+        <DateTimeComponant />
+    </div>
+
+    <div class="row mt-4">
         <div class="col-sm-12 col-md-10 col-lg-8 mx-auto">
-            <div class="row pt-3 pb-2" style="background-color: rgb(var(--code-primary)); position:sticky; position:-webkit-sticky; z-index:11; top:0">
-                <div class="col-12 justify-content-center">
-                    <DateTimeComponant />
-                </div>
-                <div class="col-12 mt-4 mb-2">
-                    <div class="d-flex justify-content-center">
-                        <SelectCatagory UpdateTodoList="UpdateTodoList" SelectedValueChanged="SelectedValueChanged" />
-                        <button class="btn btn-outline-light ml-5 mt-auto" @onclick="(() => { ShowCatagory = true; })">New</button>
-                    </div>
+            <div class="row" style="background-color: rgb(var(--code-primary)); position:sticky; position:-webkit-sticky; z-index:11; top:0">
+                <div class="col-12">
+                    @if (!ShowCatagory)
+                    {
+                        <div class="row w-100 px-2 mx-auto justify-content-between">
+                            <div class="mt-auto" style="flex-wrap:nowrap;">Select Catagory</div>
+                            <button class="btn btn-outline-light mb-auto" @onclick="(() => { ShowCatagory = true; })">Add New Catagory</button>
+                        </div>
+                    }
                     @if (ShowCatagory)
                     {
-                        <div class="row my-2 p-3 position-relative" style="box-shadow: 1px 2px 3px 1px currentcolor, inset 1px 2px 3px 1px currentcolor">
+                        <div class="row p-1 my-2 position-relative" style="box-shadow: 1px 2px 3px 1px currentcolor, inset 1px 2px 3px 1px currentcolor">
                             <AddCatagory ShowCatagory="(e => { ShowCatagory = e; })" UpdateTodoList="UpdateTodoList" />
                         </div>
                     }
+                    else
+                    {
+                        <div class="row my-1">
+                            <SelectCatagory UpdateTodoList="UpdateTodoList" SelectedValueChanged="SelectedValueChanged" />
+                        </div>
+                    }
                 </div>
-                <div class="col-12 todo-input-container bg-white">
-                    <input type="text" name="txtTodo" @bind="@Text" @bind:event="oninput" placeholder="Todo" class="w-100 todo-input" />
-                </div>
-                <div class="col-12 text-white text-right" style="font-size:10px">Press Enter to add Todo.</div>
+                @if (!ShowCatagory)
+                {
+                    <div class="col-12 todo-input-container bg-white">
+                        <input type="text" name="txtTodo" @bind="@Text" @bind:event="oninput" placeholder="Todo" class="w-100 todo-input" />
+                    </div>
+                    <div class="col-12 text-white text-right" style="font-size:10px">Press Enter to add Todo.</div>
+                }
             </div>
 
-            <div class="row p-3"><TodoCatagory UpdateTodoList="UpdateTodoList" /></div>
+            <div class="row py-1 px-2"><TodoCatagory UpdateTodoList="UpdateTodoList" /></div>
 
         </div>
     </div>

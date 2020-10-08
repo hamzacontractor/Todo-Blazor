@@ -5,11 +5,13 @@
 
 
 
-<div class="row w-100 text-center" style="font-size: .8em">
-    @current.ToString("dddd, dd MMMM yyyy")
-</div>
-<div class="row w-100 text-center" style="font-size: 1.8em">
-    @current.ToString("h:mm:ss tt")
+<div class="row w-100">
+    <div class="col-auto mr-auto">
+        @current.ToString("dddd, dd MMMM yyyy")
+    </div>
+    <div class="col-auto ml-auto">
+        @current.ToString("h:mm:ss tt")
+    </div>
 </div>
 
 

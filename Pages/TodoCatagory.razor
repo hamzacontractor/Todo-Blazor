@@ -29,9 +29,7 @@
                 return;
         }
 
-        Console.WriteLine($"Cat:{todoCatagory.Name},  TS:{span.TotalMinutes.ToString()}");
-
-        <div class="col-12 p-4 mt-5 priority-container">
+        <div class="col-12 py-1 px-2 m-0 mt-5 priority-container rounded">
             <button type="button" class="btn btn-outline-danger position-absolute border-0" style="top:6px; right:4px;" @onclick="(async e => { await RemoveCatagory(todoCatagory.Name); })">&times;</button>
             <h4>@todoCatagory.Name</h4>
             @if (todoCatagory.Todos.Count > 0)
@@ -43,8 +41,8 @@
                     </div>
                 }
             }
-            <div class="ml-4 mb-1 mt-5" style="font-size:.9em;">Average:</div>
-            <div class="badge badge-pill badge-primary font-weight-light" style="font-size:1.1em;">@avg</div>
+            <div class="ml-5 mb-1 mt-3" style="font-size:.9em;">Average:</div>
+            <div class="badge badge-pill badge-primary font-weight-light px-5" style="font-size:1.1em;">@avg</div>
         </div>
     }
 }

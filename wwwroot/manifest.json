@@ -1,6 +1,6 @@
 {
-  "name": "Todo Blazor App",
-  "short_name": "Todo Blazor App",
+  "name": "Todo App",
+  "short_name": "Todo App",
   "start_url": "./",
   "display": "standalone",
   "background_color": "rgb(77,128,228)",
